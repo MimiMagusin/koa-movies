@@ -1,0 +1,21 @@
+{
+  "name": "koa-movies",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./index.js",
+    "test": "PORT=3333 mocha"
+  },
+  "author": "Mimi",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.1.2",
+    "koa": "^2.3.0",
+    "mocha": "^4.0.1",
+    "request": "^2.83.0"
+  },
+  "devDependencies": {
+    "chai-http": "^3.0.0"
+  }
+}
