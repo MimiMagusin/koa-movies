@@ -4,15 +4,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node ./index.js",
+    "start": "node src/server/index.js",
     "test": "PORT=3333 mocha"
   },
   "author": "Mimi",
   "license": "ISC",
   "dependencies": {
     "chai": "^4.1.2",
+    "knex": "0.13.0",
     "koa": "^2.3.0",
+    "koa-bodyparser": "^4.2.0",
+    "koa-router": "^7.2.1",
     "mocha": "^4.0.1",
+    "pg": "7.1.2",
     "request": "^2.83.0"
   },
   "devDependencies": {
