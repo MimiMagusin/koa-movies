@@ -104,4 +104,20 @@ describe('POST /api/v1/movies', () => {
         done();
       });
   });
+  it('should throw an error if the payload is malformed', (done) => {
+    chai.request(server)
+      .post('/api/v1/movies')
+      .send({
+        name: 'Titanic'
+      })
+      .end((err, res) => {
+        should.exist(err);
+        res.status.should.equal(400);
+        res.type.should.equal('application/json');
+        res.body.status.should.eql('error');
+        // the JSON response body should have a message key
+        should.exist(res.body.message);
+        done();
+      });
+  });
 });

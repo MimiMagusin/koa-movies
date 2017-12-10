@@ -7,6 +7,7 @@ const movieRoutes = require('./routes/movies');
 const app = new Koa();
 const PORT = process.env.PORT || 5555;
 
+app.use(bodyParser());
 app.use(indexRoutes.routes());
 app.use(movieRoutes.routes());
 
