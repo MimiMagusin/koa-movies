@@ -7,5 +7,5 @@ It is created TDD, with koa, knex and postgresql.
 
 # Set Up
 
-This is pure Reading at the moment, as you would have to set up a postgres account and change the link in the conneciton file. I might add a command later.
+This is pure Reading at the moment, as you would have to set up a postgres account and change the link in the connection file. I might add a command later.
 
